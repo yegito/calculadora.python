@@ -1,3 +1,8 @@
+def seja_bemvindo():
+    name = input("Qual o seu nome?")
+    print(f"Seja Bem-Vindo {name}!")
+
+
 def calcular():                                                        ##Função para capturar o operador 
     operador = input('''
 Por favor, digite a operação matemático que você quer usar:
@@ -10,7 +15,7 @@ Por favor, digite a operação matemático que você quer usar:
     number_1 = int(input('Por favor entre com o primeiro numero: '))
     number_2 = int(input('Por favor entre com o segundo numero: '))
 
-    if operador == '+':                                                    ##Condições para identificar os operadores 
+    if operador == '+':                                                    
         print(f'{number_1} + {number_2} = ')               
         print(number_1 + number_2)
 
@@ -44,5 +49,5 @@ Por favor escreva Y para SIM ou N para NÃO.
     else:
         novamente()
 
-
+seja_bemvindo()
 calcular()
